@@ -1,0 +1,52 @@
+/* Home */
+
+.home{
+  width: 100%;
+  height: 100vh;
+  background: url(../../../assets/img/home.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  align-items: center;
+}
+
+.home-text h1{
+  font-size: var(--big-font);
+  line-height: 1.2;
+  color: var(--bg-color);
+  /* font-family: 'Dancing Script', cursive;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-family: 'Inter', sans-serif;
+  font-family: 'Pacifico', cursive; */
+  font-family: 'Paytone One', sans-serif;
+  /* font-family: 'Poppins', sans-serif; */
+  /* font-family: 'Roboto', sans-serif; */
+  /* font-family: 'Smooch', cursive; */
+  /* font-family: 'Titillium Web', sans-serif; */
+  letter-spacing: 4px;
+  margin-bottom: 20px;
+}
+
+.home-text p{
+  color: #ffffffbf;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 38px;
+  margin-bottom: 50px;
+}
+
+.home-btn{
+  display: inline-block;
+  font-size: 16px;
+  padding: 15px 30px;
+  background:#ffffffbf;
+  color: var(--main-color);
+  border-radius: 4px;
+  transition: ease .40s;
+}
+
+.home-btn:hover{
+  background-color: var(--bg-color);
+  transform: scale(1.1);
+}

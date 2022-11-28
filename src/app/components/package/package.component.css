@@ -1,0 +1,58 @@
+.package-content{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+  gap: 2rem;
+  align-items: center;
+  margin-top: 5rem;
+}
+
+.thum{
+  position: relative;
+  transition: all .3s cubic-bezier(.445, .05, .55, .95);
+  will-change: filter;
+  cursor: pointer;
+}
+
+.thum img{
+  width: 100%;
+  height: auto;
+}
+
+.thum h3{
+  position: absolute;
+  font-size: 30px;
+  font-weight: 600;
+  text-align: right;
+  color: var(--bg-color);
+  top: 36px;
+  right: 40px;
+}
+
+.dest-content{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 24px;
+}
+
+.stars i{
+  color: var(--main-color);
+  font-size: 20px;
+}
+
+.location h4{
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.location p{
+  font-size: 15px;
+  color: var(--second-color);
+}
+
+.thum:hover{
+  filter: brightness(100%) hue-rotate(45deg);
+  transform: scale(1.04);
+}
